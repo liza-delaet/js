@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>1</title>
+</head>
+
+<body>
+  <script>
+    const string = 'Переменная со строковым значением!';
+
+    const vowels = ["а", "е", "ё", "и", "о", "у", "ы", "э", "ю", "я", "А", "Е", "Ё", "И", "О", "У", "Ы", "Э", "Ю", "Я"];
+
+    const getVowels = stringToFilter => {
+      let extractedVowels = "";
+
+      for (let i = 0; i < stringToFilter.length; i++) {
+        const currentLetter = stringToFilter[i];
+        if (vowels.includes(currentLetter)) {
+          extractedVowels = extractedVowels + currentLetter;
+        }
+
+        console.log(currentLetter);
+      }
+
+      return extractedVowels;
+    }
+
+    console.log(getVowels(string));
+  </script>
+</body>
+
+</html>
