@@ -16,12 +16,11 @@
       let extractedVowels = "";
 
       for (let i = 0; i < stringToFilter.length; i++) {
-        const currentLetter = stringToFilter[i];
-        if (vowels.includes(currentLetter)) {
-          extractedVowels = extractedVowels + currentLetter;
+        if (vowels.includes(stringToFilter[i])) {
+          extractedVowels += stringToFilter[i];
         }
 
-        console.log(currentLetter);
+        console.log(stringToFilter[i]);
       }
 
       return extractedVowels;

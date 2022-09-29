@@ -10,7 +10,7 @@
 
     const isHtml = path => {
       const requiredExt = ".html";
-      const pathExt = path.slice(-5);
+      const pathExt = path.slice(-1*requiredExt.length);
 
       if (pathExt === requiredExt) {
         return true
